@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilo_apartados.css">
+        </link>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success py-3">
+        <a class="navbar-brand" href="#">Herramientas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#">Inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plantas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Herramientas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-success text-white text-center py-3">
+        <h1 class="header-title"><em>Inicio</em></h1>
+    </header>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   <script>
+//Redirección hacia las paginas
+   let navs = document.querySelectorAll(".nav-link")
+         let nav_herramientas = navs[2]
+         let nav_plantas = navs[1]
+        
+//Redirección a la pagina de herramientas
+        nav_herramientas.addEventListener("click", function () {
+            // logica de revision
+            window.location.href = "Herramientas.html"
+        })
+
+//Redirección a la pagina de plantas        
+        nav_plantas.addEventListener("click", function () {
+            // logica de revision
+            window.location.href = "Plantas.html"
+        })
+    </script>
+</body>
+
+</html>
